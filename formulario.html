@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tienda de bicis</title>
+</head>
+<header>
+    
+    <h1>TIENDA DE BICIS</h1>
+    <hr>
+        <div class="cabecero">
+            <a href="index.html">Inicio</a>
+            <a href="bicicletas.html">Bicicletas</a>
+            <a href="formulario.html">Formulario</a>
+        </div>
+<hr>
+</header>
+<body>
+<div class="texto-centrado">
+            <h2>Solicitud de Información</h2>
+            <p>Si lo desea, puede rellenar el siguiente formulario indicando qué tipo de bicicleta busca y le responderemos con la mayor brevedad posible.</p>
+        </div>
+
+        <form action="#" method="post">
+            <div class="grupo-campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefono">Teléfono:</label>
+                 <select name="prefijo" id="">
+                    <option value="+34E">+34 E</option>
+                </select>
+                <input type="tel" name="móvil" class="input-mediano">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="">-- Seleccionar --</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label>Estado de la bicicleta:</label>
+                <div class="grupo-opciones">
+                    <label><input type="radio" name="estado_bici" value="nueva" checked> Solo nuevas</label>
+                    <label><input type="radio" name="estado_bici" value="usada"> usados / segunda mano</label>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones" rows="5" placeholder="Escriba aquí los detalles de la bicicleta que busca..."></textarea>
+            </div>
+
+            <button type="submit">Enviar Formulario</button>
+        </form>
+
+</body>
+
+<footer></footer>
+</html>
